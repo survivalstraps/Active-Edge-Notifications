@@ -352,12 +352,12 @@ small {
 }
 
 a {
-  color: #2ba6cb; 
-  text-decoration: none;
+  color: #0064af; 
+  text-decoration: underline;
 }
 
 a:hover { 
-  color: #2795b6 !important;
+  color: #0064af !important;
 }
 
 a:active { 
@@ -365,7 +365,7 @@ a:active {
 }
 
 a:visited { 
-  color: #2ba6cb !important;
+  color: #0064af !important;
 }
 
 h1 a, 
@@ -374,7 +374,7 @@ h3 a,
 h4 a, 
 h5 a, 
 h6 a {
-  color: #2ba6cb;
+  color: #0064af;
 }
 
 h1 a:active, 
@@ -383,7 +383,7 @@ h3 a:active,
 h4 a:active, 
 h5 a:active, 
 h6 a:active { 
-  color: #2ba6cb !important; 
+  color: #0064af !important; 
 } 
 
 h1 a:visited, 
@@ -392,7 +392,7 @@ h3 a:visited,
 h4 a:visited, 
 h5 a:visited, 
 h6 a:visited { 
-  color: #2ba6cb !important; 
+  color: #0064af !important; 
 } 
 
 /* Panels */
@@ -430,7 +430,7 @@ table.large-button td {
   display: block;
   width: auto !important;
   text-align: center;
-  background: #2ba6cb;
+  background: #0064af;
   border: 1px solid #2284a1;
   color: #ffffff;
   padding: 8px 0;
