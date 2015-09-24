@@ -1,0 +1,17 @@
+<h2>Your account is waiting for you!</h2>
+
+<p>Thanks for setting up an account with us, {{ customer.name }}! Now all you have to do is <a href="">activate your account</a> and set up your password.</p>
+
+<p>If the account was created in error, you can <a href="">decline the account</a> or just ignore this message.</p>
+
+
+<?php
+
+embedButton("Activate Your Account", "{{ activate.url }}");
+                          
+?>
+
+<h5>Questions about your account?</h5>
+<p>Reply to this email and we'll be happy to answer any questions you have!</p>
+
+<p>Thanks so much for your support!</p>

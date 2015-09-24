@@ -1,16 +1,14 @@
 
-<h2>Hi {{ billing_address.first_name }},</h2>
+<h2>10% off if you complete your purchase today!</h2>
 
 
-<p>Thank you for your interest in Active Edge Gear. Complete your purchase today and we will give you 10% off! Enter code <strong>TENOFF</strong> at checkout to get this deal. Improve the quality of your life today!</p>
+<p>Thank you for your interest in Active Edge Gear, {{ customer.first_name }}. Complete your purchase today and we will give you 10% off! Enter code <strong>TENOFF</strong> at checkout to get this deal. Improve the quality of your life today!</p>
 
-                            <table class="button radius">
-                              <tr>
-                                <td>
-                                  <a href="#">Complete Your Order!</a>
-                                </td>
-                              </tr>
-                            </table>
+<?php
+
+embedButton("Complete Your Order!", "{{ url }}");
+                          
+?>
 
 <br>
 <h4>Here's what you left in your cart:</h4>

@@ -1,0 +1,21 @@
+<h2>Your {{ gift_card.initial_value | money_without_trailing_zeros }} Gift Card</h2>
+
+<p>Hi {{ gift_card.customer.first_name }}, thanks for ordering an <a href="{{ shop.url }}">Active Edge Gear</a> gift card! 
+  {% if gift_card.initial_value != gift_card.balance %}
+  <p>You have {{ gift_card.balance | money_without_trailing_zeros }} left on this gift card.
+  {% endif %}
+You can see your balance, view or print your gift card <a href="{{ gift_card.url }}">here</a>!
+</p>
+<p>Purchased this gift card for someone else? Feel free to forward them this email!</p>
+
+
+<?php
+
+embedButton("View Gift Card", "{{ gift_card.url }}");
+                          
+?>
+
+<h5>Questions about your gift card?</h5>
+<p>Reply to this email and we'll be happy to answer any questions you have!</p>
+
+<p>Thanks so much for your support!</p>

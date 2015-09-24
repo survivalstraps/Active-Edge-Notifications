@@ -1,16 +1,14 @@
 
-<h2>Hi {{ billing_address.first_name }},</h2>
+<h2>Last change to get 10% off!</h2>
 
 
-<p>Today is your last chance to receive 10% off your purchase. Click the link below and enter coupon code <strong>TENOFF</strong> when you checkout to get the deal. Please do it today because your code expires at midnight.</p>
+<p>{{ customer.first_name }}, today is your last chance to receive 10% off your purchase. Click the link below and enter coupon code <strong>TENOFF</strong> when you checkout to get the deal. Please do it today because your code expires at midnight.</p>
 
-                            <table class="button radius">
-                              <tr>
-                                <td>
-                                  <a href="#">Complete Your Order!</a>
-                                </td>
-                              </tr>
-                            </table>
+<?php
+
+embedButton("Complete Your Order!", "{{ url }}");
+                          
+?>
 
 <br>
 <h4>Here's what you left in your cart:</h4>

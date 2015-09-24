@@ -1,54 +1,14 @@
 
-<h2>Hi {{ customer.name }},</h2>
+<h2>You forgot something!</h2>
 
 
-<p>Thank you for visiting Active Edge! We noticed you didn't finish your purchase, and we want you to get it while it's hot! Come back to complete your purchase and we will throw in free shipping! Enter code <strong>FREESHIP</strong> at checkout.</p>                            
+<p>Thank you for visiting Active Edge Gear, {{ customer.first_name }}! We noticed you didn't finish your purchase, and we want you to get it while it's hot! Come back to complete your purchase and we will throw in free shipping! Enter code <strong>FREESHIP</strong> at checkout.</p>                            
                             
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                      
-                    </td>
-                  </tr>
-                </table> <!-- /bodyText 1 -->
-                
-                
-                <table class="row buttonText"> <!-- buttonText -->
-                  <tr>
-                    <td class="wrapper last">
-                      
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="three sub-columns center">
-                          </td>
-                          <td class="six sub-columns center">
-                            <table class="button radius">
-                              <tr>
-                                <td>
-                                  <a href="#">Complete Your Order!</a>
-                                </td>
-                              </tr>
-                            </table>  
-                          </td>
-                          <td class="three sub-columns last center">
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                      
-                    </td>
-                  </tr>
-                </table> <!-- /buttonText -->   
-                
-                
-                <table class="row bodyText"> <!-- bodyText 2 -->
-                  <tr>
-                    <td class="wrapper last">
-                      
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="center text-pad">
+<?php
+
+embedButton("Complete Your Order!", "{{ url }}");
+                          
+?>
                            
 <br>
 <h4>Here's what you left in your cart:</h4>
