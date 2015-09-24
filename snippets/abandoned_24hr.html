@@ -1,0 +1,22 @@
+
+<h2>Hi {{ billing_address.first_name }},</h2>
+
+
+<p>Thank you for your interest in Active Edge Gear. Complete your purchase today and we will give you 10% off! Enter code <strong>TENOFF</strong> at checkout to get this deal. Improve the quality of your life today!</p>
+
+                            <table class="button radius">
+                              <tr>
+                                <td>
+                                  <a href="#">Complete Your Order!</a>
+                                </td>
+                              </tr>
+                            </table>
+
+<br>
+<h4>Here's what you left in your cart:</h4>
+
+<p>{% for line in line_items %}{{ line.quantity }}x {{ line.title }}{% endfor %}</p>
+    
+<p>Questions about ordering? Reply to this email and we'll be happy to answer any questions you have.</p>
+
+<p>Thank you so much for your support!</p>

@@ -1,1 +1,22 @@
-<p>Hey!</p>
+
+<h2>Hi {{ billing_address.first_name }},</h2>
+
+
+<p>Thank you for visiting Active Edge! We noticed you didn't finish your purchase, and we want you to get it while it's hot! Come back to complete your purchase and we will throw in free shipping! Enter code <strong>FREESHIP</strong> at checkout.</p>
+
+                            <table class="button radius">
+                              <tr>
+                                <td>
+                                  <a href="#">Complete Your Order!</a>
+                                </td>
+                              </tr>
+                            </table>
+
+<br>
+<h4>Here's what you left in your cart:</h4>
+
+<p>{% for line in line_items %}{{ line.quantity }}x {{ line.title }}{% endfor %}</p>
+    
+<p>Questions about ordering? Reply to this email and we'll be happy to answer any questions you have.</p>
+
+<p>Thank you so much for your support!</p>

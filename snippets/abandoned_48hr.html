@@ -1,0 +1,22 @@
+
+<h2>Hi {{ billing_address.first_name }},</h2>
+
+
+<p>Today is your last chance to receive 10% off your purchase. Click the link below and enter coupon code <strong>TENOFF</strong> when you checkout to get the deal. Please do it today because your code expires at midnight.</p>
+
+                            <table class="button radius">
+                              <tr>
+                                <td>
+                                  <a href="#">Complete Your Order!</a>
+                                </td>
+                              </tr>
+                            </table>
+
+<br>
+<h4>Here's what you left in your cart:</h4>
+
+<p>{% for line in line_items %}{{ line.quantity }}x {{ line.title }}{% endfor %}</p>
+    
+<p>Questions about ordering? Reply to this email and we'll be happy to answer any questions you have.</p>
+
+<p>Thank you so much for your support!</p>
