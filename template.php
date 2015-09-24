@@ -54,7 +54,65 @@
                       <table class="twelve columns">
                         <tr>
                           <td class="center pre-headerText">
-                            <small>Pre-header text</small>
+<?php
+
+$switch = $_GET['load'];
+
+if (isset($switch)) {
+    switch($switch) {
+
+        case "abandoned_6hr": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "abandoned_24hr": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "abandoned_48hr": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "customer_account_activation": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "customer_account_welcome": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "gift_card_notification": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "new_order_notification": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "order_canceled": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "refund_notification": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "shipping_confirmation": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "shipping_update": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+        case "mailchimp_popup": 
+            echo "Abandoned for 6 hours!";
+        break;
+
+    }
+}
+
+?>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -72,7 +130,7 @@
                         <tr>
                           <td class="center">
                             <center>
-                              <a href="http://activeedgegear.com" target="_blank"><img src="logo.jpg" alt="Active Edge Gear" border="0" class="center"></a>
+                              <a href="http://activeedgegear.com" target="_blank"><img src="images/logo.jpg" alt="Active Edge Gear" border="0" class="center"></a>
                             </center>
                           </td>
                           <td class="expander"></td>
