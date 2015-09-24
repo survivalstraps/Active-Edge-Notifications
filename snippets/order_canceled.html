@@ -1,0 +1,14 @@
+<h2>Your order has been cancelled.</h2>
+
+{% if billing_address.name %}
+<p>{{ billing_address.name }}, </p>
+<p></p>
+{% endif %}
+
+<p>Your order {{ name }} was cancelled {% case cancel_reason %}{% when 'customer' %}at your request.{% when 'inventory' %}because we did not have enough stock to fulfill your order.{% when 'fraud' %}because we suspect it is fraudulent.{% when 'other' %}due to unforeseen circumstances and for that we apologize.{% endcase %}</p>
+
+<p></p>
+<p>{% if financial_status == 'voided' %}Your payment has been voided and there's no other action needed..{% elsif financial_status == 'credited' %}Your payment has been refunded. Please allow 1-2 business days for your refund to process.{% endif %}</p>
+
+<h5>Questions about this cancellation?</h5>
+<p>If you have any questions about your cancellation, please reply to this email or call 1-800-971-3360 and we'll be happy to help you!</p>

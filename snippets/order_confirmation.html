@@ -1,0 +1,47 @@
+<h2>Thank you for your order!</h2>
+
+<p>This is a confirmation that we've received your order. Please review everything below and get in touch with us if you have any questions!</p>
+
+<p>Date {{ date | date: "%m/%d/%Y" }}</p>
+
+{% if requires_shipping and shipping_address %}
+<p><b>Shipping address</b><br />
+{{ shipping_address.name }}<br />
+{{ shipping_address.street }}<br />
+{{ shipping_address.city }}<br />
+{{ shipping_address.province }}
+{{ shipping_address.zip }}<br />
+{{ shipping_address.country }}</p>
+{% endif %}
+
+{% if billing_address %}
+<p><b>Billing address</b><br />
+{{ billing_address.name }}<br />
+{{ billing_address.street }}<br />
+{{ billing_address.city }}<br />
+{{ billing_address.province }}
+{{ billing_address.zip }}<br />
+{{ billing_address.country }}</p>
+{% endif %}
+
+<ul style="list-style-type:none">  {% for line in line_items %} <li> {{ line.quantity }}x {{ line.title }} for {{ line.price | money }} each {% for discount in line.applied_discounts %} ( -{{ discount.amount | money }} ){% endfor %}</li> {% endfor %}
+</ul>
+{% if discounts %}
+<p>Discounts : {{ discounts_savings | money_with_currency }}</p> {% endif %}
+<p>Subtotal : {{ subtotal_price | money_with_currency }}</p>
+{% for tax_line in tax_lines %} <p>{{ tax_line.title }} : {{ tax_line.price | money_with_currency }} </p>
+{% endfor %} {% if requires_shipping %}
+<p>Shipping : {{ shipping_price | money_with_currency }}</p>
+{% endif %} <p>Total : {{ total_price | money_with_currency }}</p>
+
+
+<h5>When to Expect Your Gear</h5>
+<p>All Active Edge Gear&trade; paracord products are hand made to order. Most orders ship out within 3-5 business days, so you can typically expect to receive your gear within 7-10 business days. Once your order is shipped, you will receive an email containing your shipping confirmation and tracking number.</p>
+
+<p>For more information on shipping methods please click <a href="http://activeedgegear.com/pages/shipping-policies">here</a>.</p>
+
+<p>For information on returns and exchanges click <a href="http://activeedgegear.com/pages/returns-exchanges">here</a>.</p>
+
+
+<h5>Questions about your order?</h5>
+<p>If you have any questions about your order, please reply to this email or call 1-800-971-3360 and we'll be happy to help you!</p>
