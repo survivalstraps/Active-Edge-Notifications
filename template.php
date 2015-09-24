@@ -165,7 +165,7 @@ if (file_exists("snippets/$include.html")) {
 
 ?>
                            
-
+<p>Thanks so much for your support!</p>
 
                             
                             
