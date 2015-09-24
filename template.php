@@ -62,51 +62,47 @@ if (isset($switch)) {
     switch($switch) {
 
         case "abandoned_6hr": 
-            echo "A little reminder ";
+            echo "A little reminder. ";
         break;
 
         case "abandoned_24hr": 
-            echo "A big reminder ";
+            echo "A big reminder!! ";
         break;
 
         case "abandoned_48hr": 
-            echo "A huge reminder ";
+            echo "A huge reminder!!! ";
         break;
 
         case "customer_account_activation": 
-            echo "Your account has been created";
+            echo "Your account has been created. ";
         break;
 
         case "customer_account_welcome": 
-            echo "Abandoned for 6 hours!";
+            echo "Your account is now active. ";
         break;
 
         case "gift_card_notification": 
-            echo "Abandoned for 6 hours!";
-        break;
-
-        case "new_order_notification": 
-            echo "Abandoned for 6 hours!";
+            echo "Your gift card has arrived. ";
         break;
 
         case "order_canceled": 
-            echo "Abandoned for 6 hours!";
+            echo "Order {{ name }} has been cancelled. ";
         break;
 
         case "refund_notification": 
-            echo "Abandoned for 6 hours!";
+            echo "You've received a refund. ";
         break;
 
         case "shipping_confirmation": 
-            echo "Abandoned for 6 hours!";
+            echo "Order {{ name }} has shipped! ";
         break;
 
         case "shipping_update": 
-            echo "Abandoned for 6 hours!";
+            echo "Your order has been updated. ";
         break;
 
         case "mailchimp_popup": 
-            echo "Abandoned for 6 hours!";
+            echo "Please confirm your subscription. ";
         break;
 
     }
@@ -147,7 +143,7 @@ if (isset($switch)) {
                       
                       <table class="twelve columns">
                         <tr>
-                          <td class="center text-pad">
+                          <td class="text-pad">
                            
 <?php
 
