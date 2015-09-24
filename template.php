@@ -62,19 +62,19 @@ if (isset($switch)) {
     switch($switch) {
 
         case "abandoned_6hr": 
-            echo "A little reminder - you forgot something!";
+            echo "A little reminder ";
         break;
 
         case "abandoned_24hr": 
-            echo "A big reminder - 10% off if you complete your purchase today!";
+            echo "A big reminder ";
         break;
 
         case "abandoned_48hr": 
-            echo "A huge reminder - last chance to get 10% off!";
+            echo "A huge reminder ";
         break;
 
         case "customer_account_activation": 
-            echo "Abandoned for 6 hours!";
+            echo "Your account has been created";
         break;
 
         case "customer_account_welcome": 
@@ -151,6 +151,12 @@ if (isset($switch)) {
                            
 <?php
 
+function embedButton($text, $url) {
+    $buttonText = $text;
+    $buttonUrl = $url;
+    require("snippets/button.php");
+}
+
 $include = $_GET['load'];
 
 if (file_exists("snippets/$include.html")) {
@@ -171,46 +177,6 @@ if (file_exists("snippets/$include.html")) {
                     </td>
                   </tr>
                 </table> <!-- /bodyText 2 -->
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 
                
                 <table class="row footer"> <!-- footer -->
