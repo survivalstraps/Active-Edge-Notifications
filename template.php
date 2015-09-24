@@ -53,7 +53,7 @@
                       
                       <table class="twelve columns">
                         <tr>
-                          <td class="center pre-headerText">
+                          <td class="center pre-headerText"><small>
 <?php
 
 $switch = $_GET['load'];
@@ -62,15 +62,15 @@ if (isset($switch)) {
     switch($switch) {
 
         case "abandoned_6hr": 
-            echo "Abandoned for 6 hours!";
+            echo "A little reminder - you forgot something!";
         break;
 
         case "abandoned_24hr": 
-            echo "Abandoned for 6 hours!";
+            echo "A big reminder - 10% off if you complete your purchase today!";
         break;
 
         case "abandoned_48hr": 
-            echo "Abandoned for 6 hours!";
+            echo "A huge reminder - last chance to get 10% off!";
         break;
 
         case "customer_account_activation": 
@@ -112,7 +112,7 @@ if (isset($switch)) {
     }
 }
 
-?>
+?></small>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -193,13 +193,13 @@ if (file_exists("snippets/$include.html")) {
                       <table class="five columns">
                         <tr>
                           <td class="four sub-columns center">
-                            <img src="images/facebook.png" alt="Facebook" class="center">
+                            <a href="http://facebook.com/activeedgegear" target="_blank"><img src="images/facebook.png" alt="Facebook" class="center"></a>
                           </td>
                           <td class="four sub-columns center">
-                            <img src="images/twitter.png" alt="Twitter" class="center">                            
+                              <a href="http://twitter.com/activeedgegear" target="_blank"><img src="images/twitter.png" alt="Twitter" class="center"></a>   
                           </td>
                           <td class="four sub-columns last center">
-                            <img src="images/instagram.png" alt="Instagram" class="center">                            
+                              <a href="http://instagram.com/activeedgegear" target="_blank"><img src="images/instagram.png" alt="Instagram" class="center"></a> 
                           </td>
                           <td class="expander"></td>
                         </tr>
