@@ -25,7 +25,7 @@
          padding: 0;
       }
       
-      .logo, .bodyText {
+      .logo, .bodyText, .buttonText {
         background: #fcfcfc;
       }
       
@@ -141,7 +141,7 @@ if (isset($switch)) {
                   </tr>
                 </table> <!-- /logo -->
                
-                <table class="row bodyText"> <!-- bodyText -->
+                <table class="row bodyText"> <!-- bodyText 1 -->
                   <tr>
                     <td class="wrapper last">
                       
@@ -158,6 +158,9 @@ if (file_exists("snippets/$include.html")) {
 }
 
 ?>
+                           
+
+
                             
                             
                           </td>
@@ -167,7 +170,47 @@ if (file_exists("snippets/$include.html")) {
                       
                     </td>
                   </tr>
-                </table> <!-- /bodyText -->
+                </table> <!-- /bodyText 2 -->
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                
                 <table class="row footer"> <!-- footer -->
