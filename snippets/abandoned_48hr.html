@@ -6,14 +6,19 @@
 
 <?php
 
-embedButton("Complete Your Order!", "{{ url }}");
+embedButton("Complete Your Order!", "{{return_url}}");
                           
 ?>
 
 <br>
 <h4>Here's what you left in your cart:</h4>
 
-<p>{% for line in line_items %}{{ line.quantity }}x {{ line.title }}{% endfor %}</p>
+<!--{{each_product}}-->
+
+	<li>{{product_name}} ({{product_price}})</li>
+
+<!--{{end_each_product}}-->
+</ul>  
     
 <h5>Questions about your order?</h5>
 <p>If you have any questions about your order, please reply to this email or call 1-800-971-3360 and we'll be happy to help you!</p>

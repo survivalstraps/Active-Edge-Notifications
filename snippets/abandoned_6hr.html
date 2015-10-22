@@ -2,19 +2,24 @@
 <h2>You forgot something!</h2>
 
 
-<p>Thank you for visiting Active Edge Gear, {{ customer.first_name }}! We noticed you didn't finish your purchase, and we want you to get it while it's hot! Come back to complete your purchase and we will throw in free shipping! Enter code <strong>FREESHIP</strong> at checkout.</p>                            
+<p>Thank you for visiting Active Edge Gear, {{ customer.first_name }}! We noticed you didn't finish your purchase, and we want you to get it while it's hot! Come back to complete your purchase and we will throw in free shipping! Enter code <strong>FREESHIP</strong> at checkout.</p>
                             
 <?php
 
-embedButton("Complete Your Order!", "{{ url }}");
+embedButton("Complete Your Order!", "{{return_url}}");
                           
 ?>
                            
 <br>
 <h4>Here's what you left in your cart:</h4>
 
-<p>{% for line in line_items %}{{ line.quantity }}x {{ line.title }}{% endfor %}</p>
-    
+<ul>
+<!--{{each_product}}-->
+
+	<li>{{product_name}} ({{product_price}})</li>
+
+<!--{{end_each_product}}-->
+</ul>    
 
 <h5>Questions about your order?</h5>
 <p>If you have any questions about your order, please reply to this email or call 1-800-971-3360 and we'll be happy to help you!</p>
