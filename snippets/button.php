@@ -42,4 +42,4 @@
                       
                       <table class="twelve columns">
                         <tr>
-                          <td class="center text-pad">
+                          <td class="text-pad">
