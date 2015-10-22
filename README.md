@@ -2,8 +2,8 @@
 
 Using Zurb Ink 1.05 to create responsive grid-based emails for Shopify notifications. 
 
-Using MailChimp's tempalte builder to create as close of a match as possible while retaining
-MailChimp's WYSIWYG editor for users that don't know HTML.
+Using MailChimp's template builder to create as close of a match as possible while retaining
+MailChimp's WYSIWYG editor for users that want drag and drop ability.
 
 
 ## References
